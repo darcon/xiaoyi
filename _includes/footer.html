@@ -85,13 +85,13 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/xiaoyi/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/xiaoyi/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/xiaoyi/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
 
 <!-- async load function -->
@@ -113,7 +113,7 @@
     })
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+        async("/xiaoyi/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -135,7 +135,7 @@
     })
 </script>
 
-<!-- Google Analytics -->
+<!-- Google Analytics 
 {% if site.ga_track_id %}
 <script>
     // dynamic User by Hux
@@ -151,10 +151,10 @@
     ga('create', _gaId, _gaDomain);
     ga('send', 'pageview');
 </script>
-{% endif %}
+{% endif %}-->
 
 
-<!-- Baidu Tongji -->
+<!-- Baidu Tongji 
 {% if site.ba_track_id %}
 <script>
     // dynamic User by Hux
@@ -169,7 +169,7 @@
       s.parentNode.insertBefore(hm, s);
     })();
 </script>
-{% endif %}
+{% endif %}-->
 
 
 <!-- Side Catalog -->
@@ -201,7 +201,7 @@
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
      * Fork by Hux to support padding
      */
-    async("{{ '/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
+    async("{{ '/xiaoyi/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
         $('.catalog-body').onePageNav({
             currentClass: "active",
             changeHash: !1,
